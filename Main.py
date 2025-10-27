@@ -14,6 +14,9 @@ window = Tk("Calculator")
 mainframe = ttk.Frame(window, padding = (3,3,12,12))
 mainframe.grid(column = 0, row = 0, sticky = (N, W, E, S))
 
+# Creates the label where the calculations will be outputted
+calc_label = ttk.Label(window, text="Placeholder", padding = (15,15,15,15))
+calc_label.grid(column = 1, columnspan = 4, row =1, sticky = (E))
 
 # Creates the 0 button and adds it to the window
 button0 = ttk.Button(window, width = 5, text = "0")
